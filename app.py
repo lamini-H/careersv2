@@ -33,6 +33,13 @@ JOBS =[
     'Salary': '$ 12,500'
     
   },
+  {
+    'id': 5,
+    'title': 'Graphic Designer',
+    'location': 'Wellingborough, England',
+    'Salary': '$ 10,500'
+    
+  },
 ]
 
 @app.route("/")
