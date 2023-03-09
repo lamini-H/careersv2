@@ -1,0 +1,7 @@
+
+
+
+database: lamscareers
+username: darze6ylcmfbn0ed7zj2
+host: us-east.connect.psdb.cloud
+password: pscale_pw_cc70S7xieHOVesMxuOYJfnVHsOK6QAlkkDKfOUsxHCO
