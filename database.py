@@ -10,19 +10,19 @@ engine = create_engine(
   }
   })
 
-with engine.connect() as conn:
+
+def load_jobs_from_db():
+    with engine.connect() as conn:
     # Execute a SQL query to select all rows from the "jobs" table
-    query = text('SELECT id, title, location, salary, currency, responsibilities, requirements FROM jobs')
-    result = conn.execute(query)
+      query = text('select title,location,salary from jobs')
+      result = conn.execute(query)
 
     # Iterate through the rows and convert them to dictionaries
-    result_dicts = []
+    jobs = []
     for row in result.fetchall():
         result_dict = {}
         for index, column in enumerate(result.keys()):
             result_dict[column] = row[index]
-        result_dicts.append(result_dict)
-
-# Print the resulting list of dictionaries
-print(result_dicts)
-
+        jobs.append(result_dict)
+        return jobs
+      
