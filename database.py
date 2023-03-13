@@ -25,4 +25,5 @@ def load_jobs_from_db():
             result_dict[column] = row[index]
         jobs.append(result_dict)
         return jobs
+
       
